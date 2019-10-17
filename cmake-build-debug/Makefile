@@ -124,6 +124,157 @@ AntColony\fast:
 	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\build
 .PHONY : AntColony\fast
 
+#=============================================================================
+# Target rules for targets named gnuplot_library
+
+# Build rule for target.
+gnuplot_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gnuplot_library
+.PHONY : gnuplot_library
+
+# fast build rule for target.
+gnuplot_library\fast:
+	$(MAKE) -f CMakeFiles\gnuplot_library.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\gnuplot_library.dir\build
+.PHONY : gnuplot_library\fast
+
+Ant.obj: Ant.cpp.obj
+
+.PHONY : Ant.obj
+
+# target to build an object file
+Ant.cpp.obj:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Ant.cpp.obj
+.PHONY : Ant.cpp.obj
+
+Ant.i: Ant.cpp.i
+
+.PHONY : Ant.i
+
+# target to preprocess a source file
+Ant.cpp.i:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Ant.cpp.i
+.PHONY : Ant.cpp.i
+
+Ant.s: Ant.cpp.s
+
+.PHONY : Ant.s
+
+# target to generate assembly for a file
+Ant.cpp.s:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Ant.cpp.s
+.PHONY : Ant.cpp.s
+
+AntColony.obj: AntColony.cpp.obj
+
+.PHONY : AntColony.obj
+
+# target to build an object file
+AntColony.cpp.obj:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\AntColony.cpp.obj
+.PHONY : AntColony.cpp.obj
+
+AntColony.i: AntColony.cpp.i
+
+.PHONY : AntColony.i
+
+# target to preprocess a source file
+AntColony.cpp.i:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\AntColony.cpp.i
+.PHONY : AntColony.cpp.i
+
+AntColony.s: AntColony.cpp.s
+
+.PHONY : AntColony.s
+
+# target to generate assembly for a file
+AntColony.cpp.s:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\AntColony.cpp.s
+.PHONY : AntColony.cpp.s
+
+Parser.obj: Parser.cpp.obj
+
+.PHONY : Parser.obj
+
+# target to build an object file
+Parser.cpp.obj:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Parser.cpp.obj
+.PHONY : Parser.cpp.obj
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Parser.cpp.s
+.PHONY : Parser.cpp.s
+
+Plotter.obj: Plotter.cpp.obj
+
+.PHONY : Plotter.obj
+
+# target to build an object file
+Plotter.cpp.obj:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Plotter.cpp.obj
+.PHONY : Plotter.cpp.obj
+
+Plotter.i: Plotter.cpp.i
+
+.PHONY : Plotter.i
+
+# target to preprocess a source file
+Plotter.cpp.i:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Plotter.cpp.i
+.PHONY : Plotter.cpp.i
+
+Plotter.s: Plotter.cpp.s
+
+.PHONY : Plotter.s
+
+# target to generate assembly for a file
+Plotter.cpp.s:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\Plotter.cpp.s
+.PHONY : Plotter.cpp.s
+
+gnuplot_i.obj: gnuplot_i.c.obj
+
+.PHONY : gnuplot_i.obj
+
+# target to build an object file
+gnuplot_i.c.obj:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\gnuplot_i.c.obj
+	$(MAKE) -f CMakeFiles\gnuplot_library.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\gnuplot_library.dir\gnuplot_i.c.obj
+.PHONY : gnuplot_i.c.obj
+
+gnuplot_i.i: gnuplot_i.c.i
+
+.PHONY : gnuplot_i.i
+
+# target to preprocess a source file
+gnuplot_i.c.i:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\gnuplot_i.c.i
+	$(MAKE) -f CMakeFiles\gnuplot_library.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\gnuplot_library.dir\gnuplot_i.c.i
+.PHONY : gnuplot_i.c.i
+
+gnuplot_i.s: gnuplot_i.c.s
+
+.PHONY : gnuplot_i.s
+
+# target to generate assembly for a file
+gnuplot_i.c.s:
+	$(MAKE) -f CMakeFiles\AntColony.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AntColony.dir\gnuplot_i.c.s
+	$(MAKE) -f CMakeFiles\gnuplot_library.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\gnuplot_library.dir\gnuplot_i.c.s
+.PHONY : gnuplot_i.c.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -159,7 +310,23 @@ help:
 	@echo ... depend
 	@echo ... AntColony
 	@echo ... edit_cache
+	@echo ... gnuplot_library
 	@echo ... rebuild_cache
+	@echo ... Ant.obj
+	@echo ... Ant.i
+	@echo ... Ant.s
+	@echo ... AntColony.obj
+	@echo ... AntColony.i
+	@echo ... AntColony.s
+	@echo ... Parser.obj
+	@echo ... Parser.i
+	@echo ... Parser.s
+	@echo ... Plotter.obj
+	@echo ... Plotter.i
+	@echo ... Plotter.s
+	@echo ... gnuplot_i.obj
+	@echo ... gnuplot_i.i
+	@echo ... gnuplot_i.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

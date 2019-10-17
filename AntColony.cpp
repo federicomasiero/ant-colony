@@ -1,6 +1,7 @@
 #include "TSP.h"
 #include "Ant.cpp"
 #include "Parser.cpp"
+#include "Plotter.cpp"
 
 
 //Number of trails at the start of the simulation
@@ -31,7 +32,7 @@ private:
 	vector<Ant> ants;					//  Ants vector
 	vector<pair<double, double>> nodes;	//  Point vector
 	vector<vector<double>> trails;		//	pheromone in every arc.
-	vector<double> probabilities;		//	probabilities vector going from onenode to another
+	vector<double> probabilities;		//	probabilities vector going from one node to another
 	int currentIndex;
 
 	double minPheromone;
@@ -39,11 +40,15 @@ private:
 	vector<int> bestTour;
 	double bestTourLength = DBL_MAX;
 
+	Plotter chart;
+
 public:
 	AntColony(string file) {
 		Parser p(file);
 		nodes = p.parse();
-		//chart.plotPoints(nodes);
+		chart = Plotter();
+		getchar();
+		chart.plotPoints(nodes);
 		srand(time(NULL));
 		nNodes = nodes.size();
 		nAnts = (int) (nNodes * ANTFACTOR);

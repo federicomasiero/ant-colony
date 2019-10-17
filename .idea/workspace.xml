@@ -1,21 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="AntColony" targetName="gnuplot_library" />
+      <config projectName="AntColony" targetName="AntColony" />
+    </generated>
   </component>
   <component name="CMakeSettings">
-    <configurations />
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ce146f0-0524-40b7-890c-2a9418715429" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ant.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AntColony.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plotter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TSP.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/a280.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/bier127.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/brd14051.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/ch130.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/ch150.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d1291.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d15112.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d1655.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d18512.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d198.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d2103.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d657.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/eil101.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/eil51.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/eil76.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/fl1400.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/fl1577.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/fl3795.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/fl417.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/fnl4461.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/gil262.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroA100.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroA150.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroA200.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroB100.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroB150.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/kroB200.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/lin105.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/lin318.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/nrw1379.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/p654.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pcb3038.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pcb442.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr1002.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr107.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr124.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr136.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr144.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr152.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/pr2392.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/rl1323.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/rl5934.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileTSP/berlin52.tsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.ilk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Ant.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Parser.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/embed.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/intermediate.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/manifest.rc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/manifest.res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/vc140.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gnuplot_i.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gnuplot_i.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/gnuplot_library.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AntColony.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AntColony.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plotter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntColony.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,17 +109,27 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SEgy65H3MuQ1EHfC5vrtQmRZro" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/AntColony.iml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,12 +143,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="AntColony" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="AntColony" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="AntColony">
+  <component name="RunManager" selected="CMake Application.AntColony">
+    <configuration name="AntColony" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-file C:\Users\feder\CLionProjects\AntColony\FileTSP\berlin52.TSP" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntColony" TARGET_NAME="AntColony" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AntColony" RUN_TARGET_NAME="AntColony">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gnuplot_library" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntColony" TARGET_NAME="gnuplot_library" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.AntColony" />
+      <item itemvalue="CMake Application.gnuplot_library" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,8 +169,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571137423101</updated>
-      <workItem from="1571137424740" duration="478000" />
+      <workItem from="1571137424740" duration="2793000" />
+      <workItem from="1571140477938" duration="1621000" />
+      <workItem from="1571152974880" duration="9307000" />
     </task>
+    <task id="LOCAL-00001" summary="First">
+      <created>1571137928409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571137928409</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,7 +191,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -87,5 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First" />
+    <option name="LAST_COMMIT_MESSAGE" value="First" />
   </component>
 </project>
