@@ -101,6 +101,6 @@ CMakeFiles\gnuplot_library.dir\clean:
 .PHONY : CMakeFiles\gnuplot_library.dir\clean
 
 CMakeFiles\gnuplot_library.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\feder\CLionProjects\AntColony C:\Users\feder\CLionProjects\AntColony C:\Users\feder\CLionProjects\AntColony\cmake-build-debug C:\Users\feder\CLionProjects\AntColony\cmake-build-debug C:\Users\feder\CLionProjects\AntColony\cmake-build-debug\CMakeFiles\GNUPLOT_LIBRARY.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\feder\CLionProjects\AntColony C:\Users\feder\CLionProjects\AntColony C:\Users\feder\CLionProjects\AntColony\cmake-build-debug C:\Users\feder\CLionProjects\AntColony\cmake-build-debug C:\Users\feder\CLionProjects\AntColony\cmake-build-debug\CMakeFiles\gnuplot_library.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\gnuplot_library.dir\depend
 

@@ -5,6 +5,9 @@
 #ifndef ANTCOLONY_TSP_H
 #define ANTCOLONY_TSP_H
 
+#define _GNU_SOURCE
+
+#include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>

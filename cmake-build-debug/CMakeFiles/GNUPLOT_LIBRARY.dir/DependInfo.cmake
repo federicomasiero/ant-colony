@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/feder/CLionProjects/AntColony/gnuplot_i.c" "C:/Users/feder/CLionProjects/AntColony/cmake-build-debug/CMakeFiles/GNUPLOT_LIBRARY.dir/gnuplot_i.c.obj"
+  "C:/Users/feder/CLionProjects/AntColony/gnuplot_i.c" "C:/Users/feder/CLionProjects/AntColony/cmake-build-debug/CMakeFiles/gnuplot_library.dir/gnuplot_i.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "C:/Program Files/boost/boost_1_72_0"
   )
 
 # Targets to which this target links.

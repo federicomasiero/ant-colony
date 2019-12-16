@@ -11,6 +11,7 @@ set(CMAKE_C_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "C:/Program Files/boost/boost_1_72_0"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/feder/CLionProjects/AntColony/Ant.cpp" "C:/Users/feder/CLionProjects/AntColony/cmake-build-debug/CMakeFiles/AntColony.dir/Ant.cpp.obj"
@@ -23,6 +24,7 @@ set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "C:/Program Files/boost/boost_1_72_0"
   )
 
 # Targets to which this target links.

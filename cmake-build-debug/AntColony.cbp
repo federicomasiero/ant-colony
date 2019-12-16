@@ -24,6 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Program Files/boost/boost_1_72_0"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
@@ -46,6 +47,7 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Program Files/boost/boost_1_72_0"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
@@ -78,6 +80,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Program Files/boost/boost_1_72_0"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
@@ -100,6 +103,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Program Files/boost/boost_1_72_0"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
@@ -146,7 +150,6 @@
 			<Option target="gnuplot_library"/>
 		</Unit>
 		<Unit filename="C:/Users/feder/CLionProjects/AntColony/gnuplot_i.h">
-			<Option target="AntColony"/>
 			<Option target="gnuplot_library"/>
 		</Unit>
 		<Unit filename="C:/Users/feder/CLionProjects/AntColony/main.cpp">
