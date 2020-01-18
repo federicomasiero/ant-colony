@@ -19,16 +19,16 @@ constexpr auto EVAPORATION = (double) 0.1;;
 constexpr auto RANDOMFACTOR = (double) 0.9;;
 
 //Number of iterations before stop the algorithm
-constexpr auto MAXITERATIONS = (int) 500;;
+constexpr auto MAXITERATIONS = (int) 200;;
 
 //Is AC algorithm?
 constexpr auto AC = 0;;
 
 //Is ACS algorithm?
-constexpr auto ACS = 1;;
+constexpr auto ACS = 0;;
 
 //Is MMAS algorithm?
-constexpr auto MMAS = 0;;
+constexpr auto MMAS = 1;;
 
 class AntColony {
 private:
@@ -274,7 +274,9 @@ private:
 			if ((*ant).trailLength(nodes) < bestTourLength) {
 				bestTourLength = (*ant).trailLength(nodes);
 				bestTour = (*ant).getTrail();
-				if(MMAS) maxPheromone = nNodes / bestTourLength;
+				if(MMAS) {
+				    maxPheromone = nNodes / bestTourLength;
+				}
                 printSolution();
 			}
 		}
