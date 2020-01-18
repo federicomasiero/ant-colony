@@ -9,20 +9,17 @@ constexpr auto C = (double) 1.0;;
 //how many ants we’ll use per city
 constexpr auto ANTFACTOR = (double) 0.8;;
 
-//Control the pheromone importance
-constexpr auto ALPHA = (double) 1.0;;
-
 //Control the distance priority
-constexpr auto BETA = (double) 5.0; // OBS: beta >> alpha for best result;;
+constexpr auto BETA = (double) 2.0; // OBS: beta >> 1 for best result;;
 
 //percent how much the pheromone is evaporating in every iteration
-constexpr auto EVAPORATION = (double) 0.2;;
+constexpr auto EVAPORATION = (double) 0.1;;
 
 //a little bit of randomness
-constexpr auto RANDOMFACTOR = (double) 0.8;;
+constexpr auto RANDOMFACTOR = (double) 0.9;;
 
 //Number of iterations before stop the algorithm
-constexpr auto MAXITERATIONS = (int) 200;;
+constexpr auto MAXITERATIONS = (int) 500;;
 
 //Is AC algorithm?
 constexpr auto AC = 0;;
@@ -165,7 +162,7 @@ private:
 			double argmax = 0.0;
 			for (int f = 0; f < nNodes; f++) {
 				if (!ant.isVisited(f)) {
-					double arg = pow(trails[i][f], ALPHA) * pow(distance(nodes[i],nodes[f]), BETA);
+					double arg = trails[i][f] * pow((1 / distance(nodes[i],nodes[f])), BETA);
 					if (arg > argmax) {
 						argmax = arg;
 						node = f;
@@ -230,7 +227,7 @@ private:
 	void localUpdating(Ant ant) {
 		int node1 = ant.getTrailNode(currentIndex);
 		int node2 = ant.getTrailNode(currentIndex + 1);
-		double delta = 1 / (nNodes * nNodes * distance(nodes[node1], nodes[node2]));
+		double delta = 1 / (nNodes * bestTourLength);
 		trails[node1][node2] = (1 - EVAPORATION) * trails[node1][node2] + EVAPORATION * delta;
 	}
 
@@ -253,22 +250,18 @@ private:
             }
 	    }
 	    if(ACS || MMAS) {
-            double delta = 1 / bestTourLength;
-            for (int f = 0; f < nNodes - 1; f++) {
-                int node1 = bestTour[f];
-                int node2 = bestTour[f + 1];
-                trails[node1][node2] = (1 - EVAPORATION) * trails[node1][node2] + EVAPORATION * delta;
-                if (MMAS) {
-                    if (trails[node1][node2] < minPheromone) trails[node1][node2] = minPheromone;
-                    if (trails[node1][node2] > maxPheromone) trails[node1][node2] = maxPheromone;
+            for (int i = 0; i < nNodes; i++) {
+                for (int j = 0; j < nNodes; j++) {
+                    double delta = 0.0;
+                    if(isEdgeInBestTour(i, j)) {
+                        delta = 1 / bestTourLength;
+                    }
+                    trails[i][j] = (1 - EVAPORATION) * trails[i][j] + EVAPORATION * delta;
+                    if (MMAS) {
+                        if (trails[i][j] < minPheromone) trails[i][j] = minPheromone;
+                        if (trails[i][j] > maxPheromone) trails[i][j] = maxPheromone;
+                    }
                 }
-            }
-            int node1 = bestTour[nNodes - 1];
-            int node2 = bestTour[0];
-            trails[node1][node2] = (1 - EVAPORATION) * trails[node1][node2] + EVAPORATION * delta;
-            if (MMAS) {
-                if (trails[node1][node2] < minPheromone) trails[node1][node2] = minPheromone;
-                if (trails[node1][node2] > maxPheromone) trails[node1][node2] = maxPheromone;
             }
         }
 	}
@@ -330,4 +323,21 @@ private:
             return d_p1_p2;
 	    }
 	}
+
+	bool isEdgeInBestTour(int node1, int node2) {
+        int index = 0;
+        for (int i = 0; i < nNodes; i++) {
+            if(bestTour[i] == node1) index = i;
+        }
+        if(index == 0) {
+            if(bestTour[nNodes - 1] == node2) return true;
+        }
+        else if(index == (nNodes - 1)) {
+            if(bestTour[0] == node2) return true;
+        }
+        else {
+            if(bestTour[index - 1] == node2 || bestTour[index + 1] == node2) return true;
+        }
+        return false;
+    }
 };
