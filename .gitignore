@@ -32,5 +32,6 @@
 *.app
 
 # Directories
-FileTSP/
-cmake-build-debug/
+FileTSP
+cmake-build-debug
+.idea
