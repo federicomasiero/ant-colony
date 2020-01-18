@@ -12,56 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ce146f0-0524-40b7-890c-2a9418715429" name="Default Changelist" comment="Fixed">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a00660" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a00976" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a03424" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a04056" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a04760" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a04804" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a06776" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a07604" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a07704" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a07928" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a08004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a09204" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a09476" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a09948" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a10672" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a11748" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a11992" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a12064" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a12124" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a13200" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a13416" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a13612" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a13896" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a13996" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a14284" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a14928" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a15016" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a16400" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a16680" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a17504" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a18108" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_a18176" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/gnuplot_tmpdatafile_b00660" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Ant.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AntColony.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AntColony.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileTSP/brd14051.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/brd14051.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileTSP/burma14.TSP" beforeDir="false" afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/burma14.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileTSP/d657.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/FileTSP/Nuova cartella/d657.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntColony.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntColony.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntColony.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntColony.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Ant.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Ant.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/AntColony.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/AntColony.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Parser.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/Parser.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntColony.dir/vc140.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="1ce146f0-0524-40b7-890c-2a9418715429" name="Default Changelist" comment="Fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +97,7 @@
       <workItem from="1576480261125" duration="11116000" />
       <workItem from="1579353814749" duration="95000" />
       <workItem from="1579353952257" duration="217000" />
-      <workItem from="1579354481963" duration="12803000" />
+      <workItem from="1579354481963" duration="13055000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <created>1571137928409</created>
