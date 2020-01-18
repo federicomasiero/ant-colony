@@ -7,7 +7,7 @@
 constexpr auto C = (double) 1.0;;
 
 //how many ants we’ll use per city
-constexpr auto ANTFACTOR = (double) 0.9;;
+constexpr auto ANTFACTOR = (double) 0.8;;
 
 //Control the pheromone importance
 constexpr auto ALPHA = (double) 1.0;;
@@ -22,13 +22,13 @@ constexpr auto EVAPORATION = (double) 0.2;;
 constexpr auto RANDOMFACTOR = (double) 0.8;;
 
 //Number of iterations before stop the algorithm
-constexpr auto MAXITERATIONS = (int) 10000;;
+constexpr auto MAXITERATIONS = (int) 200;;
 
 //Is AC algorithm?
-constexpr auto AC = 0;;
+constexpr auto AC = 1;;
 
 //Is ACS algorithm?
-constexpr auto ACS = 1;;
+constexpr auto ACS = 0;;
 
 //Is MMAS algorithm?
 constexpr auto MMAS = 0;;
@@ -67,11 +67,10 @@ public:
 		for (int i = 0; i < nAnts; i++) {
 			ants.push_back(Ant(nNodes, euc));
 		}
-		for (int i = 0; i < nNodes; i++) {
-			probabilities.push_back(0.0);
-		}
+		resetProbabilities();
 	}
 	void solve() {
+        srand(time(NULL));
 		clearTrails();
 		cout << "Algorithm used: ";
 		if (AC) cout << "AC\n";
@@ -98,6 +97,13 @@ private:
 		}
 		currentIndex = 0;
 	}
+	void resetProbabilities() {
+        probabilities.clear();
+        for (int i = 0; i < nNodes; i++) {
+            probabilities.push_back(0.0);
+            //cout << "Prob: " << probabilities[i] << "\n";
+        }
+	}
 	void clearTrails() {
 		trails.clear();
 		for (int i = 0; i < nNodes; i++) {
@@ -114,6 +120,10 @@ private:
 		* Set minimum quantity of Pheromone allowed in every Arc, according to MMAS rules
 	*/
 	void setMinPheromone() {
+	    if(!MMAS) {
+	        minPheromone = 0.1;
+	        return;
+	    }
 		double average = 0.0;
 		for (int i = 0; i < nNodes; i++) {
 		    for(int j = 0; j < nNodes; j++) {
@@ -123,15 +133,17 @@ private:
 		}
 		average /= nNodes * (nNodes - 1);
 		minPheromone = C / (nNodes * nNodes * average);
+		if(minPheromone <= 0) minPheromone = 0.01;
 	}
 
 	/*
 		*
 	*/
 	void moveAnts() {
-		for (int i = 0; i < nNodes - 1; i++) {
+		for (int i = 1; i < nNodes; i++) {
 			for (auto ant = ants.begin(); ant != ants.end(); ant++) {
-				(*ant).visitNode(selectNextNode(*ant));
+			    int node = selectNextNode(*ant);
+				(*ant).visitNode(node);
 				if(ACS) localUpdating(*ant);
 			}
 			currentIndex++;
@@ -145,7 +157,7 @@ private:
 	int selectNextNode(Ant ant) {
 	    // If ACS or MMAS algorithm are selected we use probabilities to choose,
 	    // otherwise we use Exploration selection.
-	    double numrand = (ACS | MMAS) ? (rand() / RAND_MAX) : 1.0;
+	    double numrand = (ACS | MMAS) ? ((double) rand() / (RAND_MAX)) : 1.0;
 		if (numrand < RANDOMFACTOR) {
 			//cout << "EXPLOITATION SELECTION\n";
 			int i = ant.getTrailNode(currentIndex);
@@ -165,14 +177,17 @@ private:
 		else {
 			//cout << "BAISED EXPLORATION SELECTION\n";
 			calculateProbabilities(ant);
-			double r = rand() / RAND_MAX;
+			double r = ((double) rand() / (RAND_MAX));
 			double total = 0.0;
 			int last = -1;
+            //cout << "Rand: " << r << "\n";
 			for (int i = 0; i < nNodes; i++) {
 			    if(probabilities[i] != 0) last = i;
 				total += probabilities[i];
+                //cout << "Total: " << total << "\n";
 				if (total > r) {
-					return i;
+                    //cout << "NextNode: " << i << "\n\n";
+                    return i;
 				}
 			}
 			if(last == -1) cout << "return -1\n";
@@ -185,21 +200,24 @@ private:
 		* Update probabilities vector
 	*/
 	void calculateProbabilities(Ant ant) {
+	    resetProbabilities();
 		int i = ant.getTrailNode(currentIndex);
-		double pheromone = 0.0;
+		double denominator = 0.0;
 		for (int f = 0; f < nNodes; f++) {
 			if (!ant.isVisited(f)) {
-				pheromone += pow(trails[i][f], ALPHA) * pow(distance(nodes[i], nodes[f]), BETA);
+				denominator += trails[i][f] * pow((1 / distance(nodes[i], nodes[f])), BETA);
 			}
 		}
+		//cout << "Denominator: " << denominator << "\n";
 		for (int f = 0; f < nNodes; f++) {
 			if (ant.isVisited(f)) {
 				probabilities[f] = 0.0;
 			}
 			else {
-				double numerator = pow(trails[i][f], ALPHA) * pow(distance(nodes[i], nodes[f]), BETA);
-                probabilities[f] = (pheromone == 0.0) ? 1.0 : numerator / pheromone;
+				double numerator = trails[i][f] * pow((1 / distance(nodes[i], nodes[f])), BETA);
+                probabilities[f] = (denominator == 0.0) ? 0.0 : numerator / denominator;
 			}
+            //cout << "Prob: " << probabilities[f] << "\n";
 		}
 	}
 
@@ -222,15 +240,17 @@ private:
 	*/
 	void globalUpdating() {
 	    if(AC) {
-	        for (auto ant = ants.begin(); ant != ants.end(); ant++) {
-	            double delta = 1 / (*ant).trailLength(nodes);
-                vector<int> antTrail = (*ant).getTrail();
-	            for(int f = 0; f < nNodes - 1; f++) {
-	                int node1 = antTrail[f];
-	                int node2 = antTrail[f + 1];
-	                trails[node1][node2] = (1 - EVAPORATION) * trails[node1][node2] + delta;
-	            }
-	        }
+            for (int i = 0; i < nNodes; i++) {
+                for (int j = 0; j < nNodes; j++) {
+                    double delta = 0.0;
+                    for (auto ant = ants.begin(); ant != ants.end(); ant++) {
+                        if((*ant).isEdgeInTrail(i, j)){
+                            delta += 1 / (*ant).trailLength(nodes);
+                        }
+                    }
+                    trails[i][j] = (1 - EVAPORATION) * trails[i][j] + delta;
+                }
+            }
 	    }
 	    if(ACS || MMAS) {
             double delta = 1 / bestTourLength;
@@ -259,9 +279,7 @@ private:
 	void updateBestTour() {
 		for (auto ant = ants.begin(); ant != ants.end(); ant++) {
 			if ((*ant).trailLength(nodes) < bestTourLength) {
-				cout << "GLOBAL UPDATE SOLUTION!\n";
 				bestTourLength = (*ant).trailLength(nodes);
-				cout << "Best tour length: " << bestTourLength << "\n";
 				bestTour = (*ant).getTrail();
 				if(MMAS) maxPheromone = nNodes / bestTourLength;
                 printSolution();
@@ -270,8 +288,9 @@ private:
 	}
 
 	void printSolution(){
-        cout << "Best Solution Cost: " << bestTourLength << "\nBest Solution: ";
-        /*for (int f = 0; f < nNodes; f++) {
+        cout << "GLOBAL UPDATE SOLUTION!\nNew Best Solution Cost: " << bestTourLength << "\n";
+        /*cout << "Best Solution: \n";
+        for (int f = 0; f < nNodes; f++) {
             cout << bestTour[f] << " - ";
         }*/
         chart.plotSolution(nodes, bestTour, nNodes);

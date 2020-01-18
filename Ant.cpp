@@ -63,6 +63,26 @@ public:
 	}
 
 	/*
+	 * Return 1 if the edge is in the ant's trail.
+	 */
+	bool isEdgeInTrail(int node1, int node2) {
+	    int index = 0;
+        for (int i = 0; i < trailSize; i++) {
+            if(trail[i] == node1) index = i;
+        }
+        if(index == 0) {
+            if(trail[trailSize - 1] == node2) return true;
+        }
+        else if(index == (trailSize - 1)) {
+            if(trail[0] == node2) return true;
+        }
+        else {
+            if(trail[index - 1] == node2 || trail[index + 1] == node2) return true;
+        }
+        return false;
+	}
+
+	/*
 		* Clear Ant informations
 	*/
 	void clear() {
