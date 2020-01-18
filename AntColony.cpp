@@ -25,10 +25,10 @@ constexpr auto RANDOMFACTOR = (double) 0.8;;
 constexpr auto MAXITERATIONS = (int) 200;;
 
 //Is AC algorithm?
-constexpr auto AC = 1;;
+constexpr auto AC = 0;;
 
 //Is ACS algorithm?
-constexpr auto ACS = 0;;
+constexpr auto ACS = 1;;
 
 //Is MMAS algorithm?
 constexpr auto MMAS = 0;;
